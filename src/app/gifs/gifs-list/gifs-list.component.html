@@ -1,0 +1,16 @@
+
+<div class="row">
+    <div class="col-md-2 col-sm-5 "   *ngFor="let res of resultados" >
+      <div class="">
+        <div class="card animate__animated animate__zoomIn">
+          <img class="card-image-top" [src]="res.images.downsized_medium.url" alt="">
+          <div class="card-body">
+            <div class="card-text">
+              {{res.title}}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
